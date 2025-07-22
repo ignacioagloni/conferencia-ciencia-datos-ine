@@ -1,0 +1,680 @@
+---
+# title: ""Ciencia de datos para el sector público
+# author: "Ignacio Agloni"
+format:
+  revealjs:
+    auto-stretch: false
+    margin: 0
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    logo: imagenes/logo_portada2.png
+    css: ine_quarto_styles.css
+    includes:
+      in-header:
+        - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+    # footer: <https://quarto.org>
+    
+---
+
+#
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+[**CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL PARA LA PRODUCCIÓN ESTADÍSTICA**]{.big-par .center-justified}
+
+[**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
+
+[**Diciembre 2024**]{.big-par .center-justified}
+
+
+## Presentación {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Speaker]{.medium-par}
+
+[**Ignacio Agloni**]{.big-par}
+
+[*Jefe Unidad de Gobierno y Ciencia de Datos - Instituto Nacional de Estadísticas*]{.medium-par} </br>
+[*Master en Tecnologías de la Información - Universidad de Chile*]{.medium-par} </br>
+[*Postitulos en ciencia de datos, inteligencia artificial, ingeniería de software y desarrollo web*]{.medium-par} </br>
+[*Sociólogo - Universidad de Chile*]{.medium-par} <br/>
+
+[<img src="imagenes/outlook-icon.png" alt="Outlook" style="width:60px; vertical-align:middle;"/> ifaglonij@ine.gob.cl]{.medium-par}
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/ignacioagloni](https://github.com/ignacioagloni)]{.medium-par}
+
+:::
+
+## Temas a revisar {transition="convex"}
+
+</br>
+
+[- *Contexto*]{.big-par .fragment}
+
+[- *¿Qué pasa con las ciencias sociales?*]{.big-par .fragment}
+
+[- *Ciencia de datos e IA en el INE*]{.big-par .fragment}
+
+[- *Nuevas habilidades demandadas*]{.big-par .fragment}
+
+[- *¿Cuanti v/s Cuali?*]{.big-par .fragment}
+
+
+# {background-color="white" transition="slide"}
+
+[Contexto]{.big-par2}
+
+## Cantidad de datos creados al año {transition="convex"}
+
+<div style="text-align: center;">
+  <img src="imagenes/volumen_data.png" style="width:600px;" class="fragment" data-fragment-index="1"/>
+</div>
+
+<p class="fragment" data-fragment-index="2" style="text-align: center;">
+  $zettabyte = 10^{12}gb \approx$ 44.444.444.444 horas de video en 4k
+</p>
+
+## Capacidad de cómputo {transition="convex"}
+
+<br/>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/capacidad.png" style="width:500px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ajedrez.png" style="width:500px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+## Abaratamiento de la tecnología {transition="convex"}
+
+<br/>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/costo_memoria.png" style="width:500px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/gpu.png" style="width:500px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+## Escenario de... {transition="convex"}
+
+<br/>
+
+[- Digitalización de la comunicación]{.medium-par .fragment}
+
+[- Aumento en la capacidad de almacenamiento y procesammiento]{.medium-par .fragment}
+
+[- Abaratamiento del *hardware*]{.medium-par .fragment}
+
+<br/>
+
+[Se crean, procesan y almacenan datos en todo momento]{.big-par .fragment}
+
+## Empresas que manejan muchos datos {transition="convex"}
+
+<div style="text-align: center;">
+  <img src="imagenes/marcas.PNG" style="width:1200px;" class="fragment" data-fragment-index="1"/>
+</div>
+
+##  ¿Qué información se registra actualmente? {transition="convex"}
+
+<br/>
+
+[- Preferencias de consumo]{.medium-par .fragment}
+
+[- Gustos musicales y audiovisuales]{.medium-par .fragment}
+
+[- Opiniones políticas]{.medium-par .fragment}
+
+[- Patrones de desplazamiento]{.medium-par .fragment}
+
+[- Patrones de consumo]{.medium-par .fragment}
+
+[- Cantidad, momento y tipo de interacciones]{.medium-par .fragment}
+
+<br/>
+
+[¡Se produce muchísima información sobre el comportamiento humano!]{.big-par .fragment}
+
+##  ¿Quién explota esta información? {transition="convex"}
+
+<br/>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/ejemplo_empresas.PNG" style="width:400px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ingeniero_informatico.jpeg" style="width:400px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+<p style="text-align: center; font-size: 1.3em;" class="medium-par fragment big-par">
+  ¿Científicas/os de datos?
+</p>
+<p style="text-align: center; font-size: 1.3em;" class="medium-par fragment big-par">
+  ¿Cientistas sociales?
+</p>
+
+
+# {background-color="white" transition="slide"}
+
+[¿Qué pasa con las ciencias sociales?]{.big-par2}
+
+
+##  Situación de las ciencias sociales {transition="convex"}
+
+<br/>
+
+[- **Incorporación tardía** de las CS a este nuevo escenario]{.medium-par .fragment}
+
+[- Durante los últimos años esto ha venido cambiando]{.medium-par .fragment}
+
+[- Cada vez se observan más cientistas sociales sumándose a la ciencia de datos e IA]{.medium-par .fragment}
+
+[- Sociólogas/os <br>
+- Economistas<br>
+- Cientistas políticas/os<br>
+- Lingüistas<br>
+- Periodistas<br>
+- Geógrafas/os<br>
+- Historiadoras/es]{.medium-par .fragment}
+
+
+[Aún las ciencias de la computación nos llevan una gran ventaja]{.big-par .fragment}
+
+
+##  Cambios en las ciencias sociales {transition="convex"}
+
+<br/>
+
+[- Aumento sustantivo en la **cantidad** y **variedad** de datos]{.medium-par .fragment}
+
+[- Cambios cuantitativos muy grandes, a veces implican saltos cualitativos (Salganik, 2018)]{.medium-par .fragment}
+
+<br>
+
+[-**¿Significa que los métodos tradicionales de las ciencias sociales quedan en el pasado?**]{.big-par .fragment .center}
+
+<br>
+
+[-**No necesariamente. Los métodos tradicionales seguirán guiándonos, pero deben ser actualizados y complementados**]{.big-par .fragment .center}
+
+##  Las encuestas por muestreo {transition="convex"}
+
+<ul class="medium-par">
+  <li class="fragment">Metodología muy sofisticada (aproximadamente 100 años)</li>
+  <li class="fragment">Tiene sólidos fundamentos teóricos</li>
+  <li class="fragment">**Son muy costosas**
+    <ul>
+      <li>No pueden ser realizadas con demasiada periodicidad</li>
+      <li>No pueden ser demasiado grandes</li>
+    </ul>
+  </li>
+  <li class="fragment">La no respuesta es un fenómeno en aumento
+    <ul>
+      <li>Problemas de sesgo</li>
+      <li>Menor precisión</li>
+      <li>Aumento de costos</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="big-par fragment" style="font-size: 1.1em;">
+  ¿Alguien sabe cuánto costó la Encuesta CASEN 2024?
+</p>
+<p class="big-par fragment" style="font-size: 1.1em;">
+  ¿y el presupuesto del Censo 2024 **solo el año de su ejecución**?
+</p>
+
+##  Pobreza en Ruánda (Blumenstock *et al*, 2015) {transition="convex"}
+
+::: {.panel-tabset}
+
+### [celulares]{.medium-par}
+
+[Datos de 1.5 millones de clientes de celulares:]{.medium-par}
+
+[Cantidad<br> 
+Tiempo<br>
+Dirección<br>
+Red de contactos<br>
+etc.]{.medium-par}
+
+
+### [encuesta]{.medium-par}
+
+[Muestra de ~850 personas:]{.medium-par}
+
+  [Características de la vivienda, bienes, entre otras<br>
+  Índice de bienestar material (riqueza)]{.medium-par}
+
+[**Entrenaron un modelo para predecir riqueza**]{.medium-par}
+
+$y = f(DatosTelefono)$
+
+[Usaron el modelo para predecir fuera de muestra]{.medium-par}
+
+### [granularidad]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/granularidad.png" style="width:600px;">
+</div>
+
+
+### [comparación]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/comparacion_ruanda.png" style="width:900px;">
+</div>
+
+:::
+
+# {background-color="white" transition="slide"}
+
+[Ciencia de datos e IA en el INE]{.big-par2}
+
+## Organización del equipo de ciencia de datos {transition="convex"}
+
+<div style="text-align: center;">
+  <img src="imagenes/organigrama.PNG" style="width:900px;">
+</div>
+
+# {background-color="white" transition="slide"}
+
+[Principales proyectos y aplicaciones]{.big-par2}
+
+## Aplicaciones de codificación automática {transition="convex"}
+
+::: {.panel-tabset}
+
+### [APIs]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/api-restaurante.JPG" style="width:850px;"/>
+</div>
+
+### [CIUO y CAENES]{.medium-par}
+
+**CIUO-08:** es el Clasificador Internacional Uniforme de Ocupaciones </br>
+**CAENES:** es el Clasificador de Actividades Económicas Nacional para Encuestas Sociodemográficas
+
+[Puedes acceder al tutorial de uso de esta API a través de este enlace ](https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion)
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/inesscc/ineclassifiers](https://github.com/inesscc/ineclassifiers)]{.medium-par}
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+### [Clasificación delitos]{.medium-par}
+
+Modelo desarrollado para la revisión de calidad de la Encuesta de Victimización (ENUSC)
+
+Capa de embeddings + **LSTM** (Long Short-Term Memory)
+
+[La aplicación (de acceso interno) puede encontrarse en este link (Swagger)](http://10.90.2.47:3123/docs)
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/diagrama-delitos.png" style="width:400px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/swagger-delitos.JPG" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
+  <img src="imagenes/sorpresa.JPG" style="width:250px;" class="fragment" data-fragment-index="3"/>
+</div>
+
+:::
+
+## Paquete calidad en R {transition="convex"}
+
+</br> 
+
+*Es el **primer paquete en R desarrollado en el INE** y con **colaboración de CEPAL***
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/estandar.JPG" style="width:300px; margin-right: 20px;"/>
+  <img src="imagenes/lumley.JPG" style="width:500px; margin-top: 40px;"/>
+</div>
+
+Tiene **9294 descargas totales** hasta la semana pasada
+
+Tiene **367 descargas** el último mes
+
+Tiene **79 descargas** la última semana
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/inesscc/calidad](https://github.com/inesscc/calidad)]{.medium-par}
+
+## Estratificación con imágenes satelitales {transition="convex"}
+
+::: {.panel-tabset}
+
+### [UPM]{.medium-par}
+
+Este ejercicio se desarrolló en el Gran Santiago
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/upm-estratificacion.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [Labels]{.medium-par}
+
+Entrenamos con ~1450 UPMs (e imágenes) con datos de ingreso
+
+Ingreso per cápita de 3 encuestas:
+
+    - Encuesta de Presupuestos Familiares 
+    - Piloto CASEN
+    - Encuesta Suplementaria de Ingresos
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/mean_upm.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Redes Neuronales?]{.medium-par}
+
+
+Nos decantamos por un modelo de ML tradicional (XGBoost)
+
+**No siempre las redes neuronales funcionan mejor**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/meme.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Features]{.medium-par}
+
+Usamos:
+
+Detección de árboles <br/>
+Detección de piscinas <br/>
+Intensidad de luces nocturnas <br/>
+Registros administrativos: cercanía a colegios, estaciones de metro, comisarías, farmacias, etc.
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/trees.JPG" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Predicción]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/prediccion.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [App]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/app1-estratificacion.png" style="width:600px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Seguimiento operativo con paradatos {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Contexto]{.medium-par}
+
+</br>
+
+**¿Qué son los paradatos?**
+
+Son todos los **registros brutos de cada acción** que se realiza en las entrevistas (dispositivos móviles de captura)
+
+**Son datos grandes:** durante el levantamiento de ENUSC 2023 se alcanzó un total de **66.375.084** observaciones
+
+Permiten **detectar desviaciones** en la correcta aplicación de una encuesta
+
+Es el caso de uso más profundo de un **Lago de Datos**
+
+La salida de este flujo de datos es un **dashboard con tablas y visualizaciones**
+
+### [Metodología]{.medium-par}
+
+Se utilizó un **orquestador de flujos de trabajo (Dagster)**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/dagster.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+Y una combinación de modelos **supervisado** (XGBoost) y **no supervisado** (K-Means)
+
+### [Dashboard]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/grafico-paradatos.png" style="width:1100px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Innominación de documentos con DL {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Requerimiento]{.medium-par}
+
+Requerimiento de Transparencia al Sector público de **públicar informes de actividades de personal a honorarios**
+
+No es posible divulgar nombre junto con rut y firmas de personas
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/ej_informe1.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+Debe publicarse así:
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/informe-innominado.JPG" style="width:400px; margin-right: 20px;"/>
+</div>
+
+
+### [Modelo]{.medium-par}
+
+Etiquetamos internamente ~1000 imágenes
+
+El modelo YOLOv *You Only Look Once*, es un modelo de detección de objetos proveniente del paquete Ultralytics, diseñado con *deep learning*
+
+El modelo cuenta con 24 capas convolucionales y 2 capas de conexión completa
+
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/model_comparison.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/resultados-yolo.png" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [Arquitectura]{.medium-par}
+
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/diagrama-innominacion.png" style="width:700px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Detección de dobles marcas en SIMCE {transition="convex"}
+
+::: {.panel-tabset}
+
+### [SIMCE]{.medium-par}
+
+Esta es una colaboración del INE a la **Agencia de Calidad de la Educación** y el **Laboratorio de Gobierno**
+
+El INE se posiciona como una **institución con un equipo potente de ciencia de datos** a nivel del sector público
+
+**Objetivo:** generar un modelo que detecte las **dobles marcas** en cuestionarios SIMCE
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/simce1.jpg" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [OCR]{.medium-par}
+
+El **SIMCE se revisa por completo por personas**, que corroboran lo que registra el OCR
+
+El OCR reacciona ante estímulos mínimos como **doble marca** 
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/doble-marca.JPG" style="width:300px; margin-right: 20px;"/>
+  <img src="imagenes/no-doble-marca.JPG" style="width:300px; margin-top: 20px;"/>
+</div>
+
+### [Solución]{.medium-par}
+
+El **SIMCE se revisa por completo por personas**, que corroboran lo que registra el OCR
+
+El OCR reacciona ante estímulos mínimos como **doble marca** 
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+::: 
+
+## Predicción de incendios con DL {transition="convex"}
+
+Este es un caso de uso de un **Lago de Datos para Ciencia de Datos en el INE**
+
+Fue desarrollado en conjunto con el **INEGI de México** en el marco de un **proyecto bilateral**
+
+Escogimos como territorio la **región de Valparaíso**, debido a los recientes incendios que han afectado a la región
+
+Se utilizaron **imágenes satelitales** (satélite MODIS) y fuentes externas de datos: **elevacion, temperatura, viento**, entre otros
+
+Se utilizó un modelo de **redes neuronales LSTM**
+
+Se toman datos de 10 días previos y se predice el día 11
+
+Este trabajo se presentó en la **VIII Conferencia de Big Data y Ciencia de Datos** en Bilbao, España, en junio de eeste año
+
+</br>
+[Dashboard](https://cienciadedatos.inegi.org.mx/laboratorio/wildfires/){.big-par .center}
+
+## ¿Dónde está el Censo? {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Censo 2024]{.medium-par}
+
+Requerimiento del equipo de **Censo de Población y Vivienda 2024**
+
+Désarrollo ágil: **~2 meses**
+
+Alta complejidad por la **alta concurrencia** y necesidad de **actualización rápida por contingencias en el terreno**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/dondeesta1.jpg" style="width:400px; margin-right: 20px;"/>
+  <img src="imagenes/dondeesta2.jpg" style="width:400px; margin-top: 20px;"/>
+</div>
+
+### [Arquitectura]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/arquitectura-censo.JPG" style="width:700px; margin-right: 20px;"/>
+</div>
+
+:::
+
+# {background-color="white" transition="slide"}
+
+[Nuevas habilidades demandadas]{.big-par2}
+
+## Nuevas habilidades demandadas {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/nuevas_habilidades.png" style="width:900px; margin-right: 20px;"/>
+</div>
+
+## Nuevas habilidades demandadas {transition="convex"}
+
+<br/>
+
+[- La sociología entra en el campo de las **tecnologías de la información**]{.big-par .fragment}
+
+[- Mayor colaboración profesionales de la informática]{.big-par .fragment}
+
+[- **Disposición a estudiar y aprender nuevas herramientas constantemente**]{.big-par .fragment}
+
+[- Mayor disposición a **salir de nuestra zona de confort**]{.big-par .fragment}
+
+[- Apertura hacia nuevas metodologías y fuentes de información]{.big-par .fragment}
+
+# {background-color="white" transition="slide"}
+
+[¿Cuanti v/s Cuali?]{.big-par2}
+
+## ¿Cuanti v/s Cuali? {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/cuanticuali.jpg" style="width:800px; margin-right: 20px;"/>
+</div>
+
+## ¿Cuanti v/s Cuali? {transition="convex"}
+
+
+[Si quisiéramos estudiar la **ideología de los partidos**, usando sus **declaraciones de principios**]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/ejemplo_declaracion.png" style="width:800px; margin-right: 20px;"/>
+</div>
+
+[¿Qué enfoque o estrategia se adecúa mejor a este problema? ¿**Cuantitativo o cualitativo**?]{.medium-par .center}
+
+
+## Wordfish (Slapin & Proksch, 2008) {transition="convex"}
+
+<br/>
+
+[Hacemos un pre procesamiento, para **representar el texto de manera numérica**]{.medium-par} 
+
+<br/>
+
+$y_{ij}=Poisson(\lambda_{ij})$<br>
+
+$\lambda_{ij} = exp(\alpha_{i} + ψ_j + β_j ∗ ω_{i})$<br>
+
+$j$: palabra<br>
+
+$i$: partido<br>
+
+$ω$: Parámetro que indica la posición de un actor/partido<br>
+
+$β$: Poder discriminador de las palabras<br>
+
+
+## Posicionamiento "ideológico" {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/wordfish_declaraciones.png" style="width:700px; margin-right: 20px;"/>
+</div>
+
+## Poder descriminador de palabras {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/palabras.PNG" style="width:750px; margin-right: 20px;"/>
+</div>
+
+# {background-color="white" transition="slide"}
+
+[¿Esta es una investigación cuanti o cuali?]{.big-par2}
+
+
+#
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+
+[**GRACIAS**]{.big-par .center-justified}
+
+[**CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL PARA LA PRODUCCIÓN ESTADÍSTICA**]{.big-par .center-justified}
+
+[**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
+
+[**Diciembre 2024**]{.big-par .center-justified}
+
