@@ -362,6 +362,7 @@
 <p><span class="big-par fragment">- <em>Visión computacional</em></span></p>
 <p><span class="big-par fragment">- <em>Otros desarrollos</em></span></p>
 <p><span class="big-par fragment">- <em>AI-Readiness en las ONE</em></span></p>
+<p><span class="big-par fragment">- <em>Reflexiones finales</em></span></p>
 </section></section>
 <section>
 <section id="section-1" class="title-slide slide level1 center" data-background-color="white" data-transition="slide">
@@ -561,6 +562,35 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="section-5" class="title-slide slide level1 center" data-background-color="white" data-transition="slide">
+<h1></h1>
+<p><span class="big-par2">Otros desarrollos</span></p>
+</section>
+<section id="seguimiento-operativo-con-paradatos" class="slide level2" data-transition="convex">
+<h2>Seguimiento operativo con paradatos</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1"><span class="medium-par">Contexto</span></a></li><li><a href="#tabset-6-2"><span class="medium-par">Dashboard</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<p><strong>¿Qué son los paradatos?</strong></p>
+<p>Registran <strong>todos los eventos</strong> que se realizan en un dispositivo movil de captura durante una entrevista</p>
+<p><strong>Son datos grandes:</strong> entre 60 y 200 millones de registros en una encuesta normal</p>
+<p>Permiten <strong>detectar desviaciones</strong> en la correcta aplicación de una encuesta</p>
+<p>Esta aplicación vive en un <strong>Lago de Datos</strong></p>
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+<p><img src="imagenes/minio.png" style="width:250px; margin-right: 20px;" class="fragment" data-fragment-index="1"> <img src="imagenes/hive.png" style="width:150px; margin-right: 20px;" class="fragment" data-fragment-index="2"> <img src="imagenes/trino.png" style="width:250px;" class="fragment" data-fragment-index="3"></p>
+</div>
+</div>
+<div id="tabset-6-2">
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+<p><img src="imagenes/tiempo_promedio.png" style="width:700px; margin-right: 20px;" class="fragment" data-fragment-index="1"> <img src="imagenes/cantidad_respuesta.jpg" style="width:900px; margin-right: 20px;" class="fragment" data-fragment-index="2"></p>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
 </section>
 <section id="paquete-calidad-en-r" class="slide level2" data-transition="convex">
 <h2>Paquete calidad en R</h2>
@@ -580,37 +610,48 @@
 <div style="text-align: center;">
 <p><img src="imagenes/tutorial_calidad.PNG" style="width:500px;"></p>
 </div>
-</section>
-<section id="seguimiento-operativo-con-paradatos" class="slide level2" data-transition="convex">
-<h2>Seguimiento operativo con paradatos</h2>
-<div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1"><span class="medium-par">Contexto</span></a></li><li><a href="#tabset-6-2"><span class="medium-par">Metodología</span></a></li><li><a href="#tabset-6-3"><span class="medium-par">Dashboard</span></a></li></ul>
-<div class="tab-content">
-<div id="tabset-6-1">
-<p><br></p>
-<p><strong>¿Qué son los paradatos?</strong></p>
-<p>Son todos los <strong>registros brutos de cada acción</strong> que se realiza en las entrevistas (dispositivos móviles de captura)</p>
-<p><strong>Son datos grandes:</strong> durante el levantamiento de ENUSC 2023 se alcanzó un total de <strong>66.375.084</strong> observaciones</p>
-<p>Permiten <strong>detectar desviaciones</strong> en la correcta aplicación de una encuesta</p>
-<p>Es el caso de uso más profundo de un <strong>Lago de Datos</strong></p>
-<p>La salida de este flujo de datos es un <strong>dashboard con tablas y visualizaciones</strong></p>
-</div>
-<div id="tabset-6-2">
-<p>Se utilizó un <strong>orquestador de flujos de trabajo (Dagster)</strong></p>
-<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-<p><img src="imagenes/dagster.JPG" style="width:600px; margin-right: 20px;"></p>
-</div>
-<p>Y una combinación de modelos <strong>supervisado</strong> (XGBoost) y <strong>no supervisado</strong> (K-Means)</p>
-</div>
-<div id="tabset-6-3">
-<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-<p><img src="imagenes/grafico-paradatos.png" style="width:1100px; margin-right: 20px;"></p>
-</div>
-</div>
-</div>
-</div>
 </section></section>
-<section id="section-5" class="title-slide slide level1 center">
+<section>
+<section id="section-6" class="title-slide slide level1 center" data-background-color="white" data-transition="slide">
+<h1></h1>
+<p><span class="big-par2">AI-readiness</span></p>
+</section>
+<section id="datos-listos-para-la-ia-en-las-one" class="slide level2">
+<h2>Datos listos para la IA en las ONE</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1"><span class="medium-par">LLMs y Motores de búsqueda</span></a></li><li><a href="#tabset-7-2"><span class="medium-par">Promt</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+<p><img src="imagenes/ai-readiness1.png" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="1"> <img src="imagenes/ai-readiness2.png" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"></p>
+</div>
+</div>
+<div id="tabset-7-2">
+<div style="text-align: center;">
+<p><img src="imagenes/llm.png" style="width:900px;"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="publicación-en-revista-stats" class="slide level2">
+<h2>Publicación en revista Stats</h2>
+<p><br></p>
+<p>Paper en revista Open Access de MDPI, generado en <strong>colaboración entre el INE e INEGI, pronto a publicarse</strong>.</p>
+<div style="text-align: center;">
+<p><img src="imagenes/mdpi.PNG" style="width:800px;"></p>
+</div>
+</section>
+<section id="reflexiones-finales" class="slide level2">
+<h2>Reflexiones finales</h2>
+<p><br> <br></p>
+<p><span class="medium-par fragment">- No ha sido fácil llegar a donde estamos (tensión entre lo <strong>urgente</strong> y lo <strong>estrétegico</strong>)</span></p>
+<p><span class="medium-par fragment">- La ciencia de datos para <strong>mejorar</strong> y <strong>ampliar la oferta estadística</strong></span></p>
+<p><span class="medium-par fragment">- Se abre la oportunidad de <strong>aprovechar fuentes no tradicionales</strong> de información (imágenes satelitales, datos de telefonía celular, etc.)</span></p>
+<p><span class="medium-par fragment">- Con el avance tecnológico en <em>hardware</em> y el boom de la inteligencia artificial se ha abierto un importante campo interdisciplinario entre los equipos de negocio y de tecnología</span></p>
+<p><span class="medium-par fragment">- Se alza un importante desafío en cuanto a <strong>no quedarse fuera del avance de la IA</strong></span></p>
+</section></section>
+<section id="section-7" class="title-slide slide level1 center">
 <h1></h1>
 <p><span class="linea-superior"></span> <span class="linea-inferior"></span></p>
 <!---

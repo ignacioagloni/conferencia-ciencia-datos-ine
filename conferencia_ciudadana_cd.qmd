@@ -73,6 +73,8 @@ format:
 
 [- *AI-Readiness en las ONE*]{.big-par .fragment}
 
+[- *Reflexiones finales*]{.big-par .fragment}
+
 
 # {background-color="white" transition="slide"}
 
@@ -330,6 +332,46 @@ El OCR reacciona ante estímulos mínimos como **doble marca**
 
 ::: 
 
+# {background-color="white" transition="slide"}
+
+[Otros desarrollos]{.big-par2}
+
+
+## Seguimiento operativo con paradatos {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Contexto]{.medium-par}
+
+**¿Qué son los paradatos?**
+
+Registran **todos los eventos** que se realizan en un dispositivo movil de captura durante una entrevista
+
+**Son datos grandes:** entre 60 y 200 millones de registros en una encuesta normal
+
+Permiten **detectar desviaciones** en la correcta aplicación de una encuesta
+
+Esta aplicación vive en un **Lago de Datos**
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/minio.png" style="width:250px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/hive.png" style="width:150px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
+  <img src="imagenes/trino.png" style="width:250px;" class="fragment" data-fragment-index="3"/>
+</div>
+
+
+### [Dashboard]{.medium-par}
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/tiempo_promedio.png" style="width:700px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/cantidad_respuesta.jpg" style="width:900px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+<br/>
+
+:::
+
+
 ## Paquete calidad en R {transition="convex"}
 
 </br> 
@@ -361,47 +403,53 @@ Tuvo **19 descargas** ayer
   <img src="imagenes/tutorial_calidad.PNG" style="width:500px;"/>
 </div>
 
+# {background-color="white" transition="slide"}
 
+[AI-readiness]{.big-par2}
 
-## Seguimiento operativo con paradatos {transition="convex"}
+## Datos listos para la IA en las ONE
 
 ::: {.panel-tabset}
 
-### [Contexto]{.medium-par}
+### [LLMs y Motores de búsqueda]{.medium-par}
 
-</br>
-
-**¿Qué son los paradatos?**
-
-Son todos los **registros brutos de cada acción** que se realiza en las entrevistas (dispositivos móviles de captura)
-
-**Son datos grandes:** durante el levantamiento de ENUSC 2023 se alcanzó un total de **66.375.084** observaciones
-
-Permiten **detectar desviaciones** en la correcta aplicación de una encuesta
-
-Es el caso de uso más profundo de un **Lago de Datos**
-
-La salida de este flujo de datos es un **dashboard con tablas y visualizaciones**
-
-### [Metodología]{.medium-par}
-
-Se utilizó un **orquestador de flujos de trabajo (Dagster)**
-
-<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-  <img src="imagenes/dagster.JPG" style="width:600px; margin-right: 20px;"/>
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/ai-readiness1.png" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ai-readiness2.png" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
 </div>
 
-Y una combinación de modelos **supervisado** (XGBoost) y **no supervisado** (K-Means)
+### [Promt]{.medium-par}
 
-### [Dashboard]{.medium-par}
-
-<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-  <img src="imagenes/grafico-paradatos.png" style="width:1100px; margin-right: 20px;"/>
+<div style="text-align: center;">
+  <img src="imagenes/llm.png" style="width:900px;"/>
 </div>
 
 :::
 
+## Publicación en revista Stats
 
+<br/>
+
+Paper en revista Open Access de MDPI, generado en **colaboración entre el INE e INEGI, pronto a publicarse**.
+
+<div style="text-align: center;">
+  <img src="imagenes/mdpi.PNG" style="width:800px;"/>
+</div>
+
+## Reflexiones finales
+
+<br/>
+<br/>
+
+[- No ha sido fácil llegar a donde estamos (tensión entre lo **urgente** y lo **estrétegico**)]{.medium-par .fragment}
+
+[- La ciencia de datos para **mejorar** y **ampliar la oferta estadística**]{.medium-par .fragment}
+
+[- Se abre la oportunidad de **aprovechar fuentes no tradicionales** de información (imágenes satelitales, datos de telefonía celular, etc.)]{.medium-par .fragment}
+
+[- Con el avance tecnológico en *hardware* y el boom de la inteligencia artificial se ha abierto un importante campo interdisciplinario entre los equipos de negocio y de tecnología]{.medium-par .fragment}
+
+[- Se alza un importante desafío en cuanto a **no quedarse fuera del avance de la IA**]{.medium-par .fragment}
 
 #
 
