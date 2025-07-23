@@ -177,11 +177,6 @@ format:
   <img src="imagenes/codificacion_automatica.PNG" style="width:900px;"/>
 </div>
 
-### [APIs]{.medium-par}
-
-<div style="text-align: center;">
-  <img src="imagenes/api-restaurante.JPG" style="width:700px;"/>
-</div>
 
 ### [CIUO y CAENES]{.medium-par}
 
@@ -198,11 +193,18 @@ Capa de embeddings + **GRU** (Gated Recurrent Unit)
   <img src="imagenes/gru.png" style="width:200px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
 </div>
 
-[Puedes acceder al tutorial de uso de esta API a través de este enlace ](https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion)
+[¿Cómo podemos ofrecer un **servicio** de codificación automática?]{.big-par .fragment data-fragment-index="3"}
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="3"/>
-  <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="4"/>
+  <img src="imagenes/api-restaurante.JPG" style="width:700px;" class="fragment" data-fragment-index="4"/>
+</div>
+
+
+[[Puedes acceder al tutorial de uso de esta API a través de este enlace ](https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion)]{.fragment data-fragment-index="5"}
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="6"/>
+  <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="7"/>
 </div>
 
 ### [Clasificación delitos]{.medium-par}
@@ -316,7 +318,7 @@ Esta es una colaboración del INE a la **Agencia de Calidad de la Educación** y
 
 El **SIMCE se revisa por completo por personas**, que corroboran lo que registra el OCR
 
-El OCR reacciona ante estímulos mínimos como **doble marca** 
+El OCR reacciona ante estímulos identificando **doble marca** 
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
   <img src="imagenes/doble-marca.JPG" style="width:300px; margin-right: 20px;"/>
@@ -327,8 +329,10 @@ El OCR reacciona ante estímulos mínimos como **doble marca**
 
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-  <img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;"/>
+  <img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
 </div>
+
+[El **modelo fue implementado en el SIMCE 2024** en 4° básico, 2° medio y 6° básico, con muy buenos resultados]{.medium-par .fragment data-fragment-index="2"}
 
 ::: 
 
@@ -418,7 +422,7 @@ Tuvo **19 descargas** ayer
   <img src="imagenes/ai-readiness2.png" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
 </div>
 
-### [Promt]{.medium-par}
+### [Worklflow]{.medium-par}
 
 <div style="text-align: center;">
   <img src="imagenes/llm.png" style="width:900px;"/>
@@ -441,13 +445,13 @@ Paper en revista Open Access de MDPI, generado en **colaboración entre el INE e
 <br/>
 <br/>
 
-[- No ha sido fácil llegar a donde estamos (tensión entre lo **urgente** y lo **estrétegico**)]{.medium-par .fragment}
+[- No ha sido fácil llegar a donde estamos (tensión entre lo **urgente** y lo **estratégico**)]{.medium-par .fragment}
 
 [- La ciencia de datos para **mejorar** y **ampliar la oferta estadística**]{.medium-par .fragment}
 
 [- Se abre la oportunidad de **aprovechar fuentes no tradicionales** de información (imágenes satelitales, datos de telefonía celular, etc.)]{.medium-par .fragment}
 
-[- Con el avance tecnológico en *hardware* y el boom de la inteligencia artificial se ha abierto un importante campo interdisciplinario entre los equipos de negocio y de tecnología]{.medium-par .fragment}
+[- Con el avance tecnológico, de la ciencia de datos y la inteligencia artificial, se ha abierto un **importante campo interdisciplinario entre los equipos de negocio y de tecnología**]{.medium-par .fragment}
 
 [- Se alza un importante desafío en cuanto a **no quedarse fuera del avance de la IA**]{.medium-par .fragment}
 

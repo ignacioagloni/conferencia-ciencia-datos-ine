@@ -438,7 +438,7 @@
 <section id="procesamiento-de-lenguaje-natural" class="slide level2" data-transition="convex">
 <h2>Procesamiento de lenguaje natural</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1"><span class="medium-par">Cod automática</span></a></li><li><a href="#tabset-2-2"><span class="medium-par">APIs</span></a></li><li><a href="#tabset-2-3"><span class="medium-par">CIUO y CAENES</span></a></li><li><a href="#tabset-2-4"><span class="medium-par">Clasificación delitos</span></a></li><li><a href="#tabset-2-5"><span class="medium-par">Data drift</span></a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1"><span class="medium-par">Cod automática</span></a></li><li><a href="#tabset-2-2"><span class="medium-par">CIUO y CAENES</span></a></li><li><a href="#tabset-2-3"><span class="medium-par">Clasificación delitos</span></a></li><li><a href="#tabset-2-4"><span class="medium-par">Data drift</span></a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
 <p><br> <br></p>
@@ -447,30 +447,29 @@
 </div>
 </div>
 <div id="tabset-2-2">
-<div style="text-align: center;">
-<p><img src="imagenes/api-restaurante.JPG" style="width:700px;"></p>
-</div>
-</div>
-<div id="tabset-2-3">
 <p><strong>CIUO-08:</strong> es el Clasificador Internacional Uniforme de Ocupaciones <br> <strong>CAENES:</strong> es el Clasificador de Actividades Económicas Nacional para Encuestas Sociodemográficas</p>
 <p>Modelo desarrollado para la <strong>codificación de ocupación y actividad económica</strong> en diversas operaciones estadísticas basadas en encuestas.</p>
 <p>Capa de embeddings + <strong>GRU</strong> (Gated Recurrent Unit)</p>
 <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
 <p><img src="imagenes/embeddings.png" style="width:200px; margin-right: 20px;" class="fragment" data-fragment-index="1"> <img src="imagenes/gru.png" style="width:200px; margin-right: 20px;" class="fragment" data-fragment-index="2"></p>
 </div>
-<p><a href="https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion">Puedes acceder al tutorial de uso de esta API a través de este enlace</a></p>
+<p><span class="big-par fragment" data-fragment-index="3">¿Cómo podemos ofrecer un <strong>servicio</strong> de codificación automática?</span></p>
 <div style="display: flex; justify-content: center; align-items: center;">
-<p><img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="3"> <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="4"></p>
+<p><img src="imagenes/api-restaurante.JPG" style="width:700px;" class="fragment" data-fragment-index="4"></p>
+</div>
+<p><span class="fragment" data-fragment-index="5"><a href="https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion">Puedes acceder al tutorial de uso de esta API a través de este enlace</a></span></p>
+<div style="display: flex; justify-content: center; align-items: center;">
+<p><img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="6"> <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="7"></p>
 </div>
 </div>
-<div id="tabset-2-4">
+<div id="tabset-2-3">
 <p>Modelo desarrollado para la <strong>revisión de calidad de la encuesta de victimización (ENUSC)</strong></p>
 <p>Capa de embeddings + <strong>LSTM</strong> (Long Short-Term Memory)</p>
 <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
 <p><img src="imagenes/diagrama-delitos.png" style="width:400px; margin-right: 20px;" class="fragment" data-fragment-index="1"> <img src="imagenes/swagger-delitos.JPG" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"> <img src="imagenes/sorpresa.JPG" style="width:250px;" class="fragment" data-fragment-index="3"></p>
 </div>
 </div>
-<div id="tabset-2-5">
+<div id="tabset-2-4">
 <div style="text-align: center;">
 <p><img src="imagenes/data_drift.png" style="width:700px;"></p>
 </div>
@@ -550,15 +549,16 @@
 </div>
 <div id="tabset-5-2">
 <p>El <strong>SIMCE se revisa por completo por personas</strong>, que corroboran lo que registra el OCR</p>
-<p>El OCR reacciona ante estímulos mínimos como <strong>doble marca</strong></p>
+<p>El OCR reacciona ante estímulos identificando <strong>doble marca</strong></p>
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
 <p><img src="imagenes/doble-marca.JPG" style="width:300px; margin-right: 20px;"> <img src="imagenes/no-doble-marca.JPG" style="width:300px; margin-top: 20px;"></p>
 </div>
 </div>
 <div id="tabset-5-3">
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-<p><img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;"></p>
+<p><img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;" class="fragment" data-fragment-index="1"></p>
 </div>
+<p><span class="medium-par fragment" data-fragment-index="2">El <strong>modelo fue implementado en el SIMCE 2024</strong> en 4° básico, 2° medio y 6° básico, con muy buenos resultados</span></p>
 </div>
 </div>
 </div>
@@ -619,7 +619,7 @@
 <section id="datos-listos-para-la-ia-en-las-one" class="slide level2">
 <h2>Datos listos para la IA en las ONE</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1"><span class="medium-par">LLMs y Motores de búsqueda</span></a></li><li><a href="#tabset-7-2"><span class="medium-par">Promt</span></a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1"><span class="medium-par">LLMs y Motores de búsqueda</span></a></li><li><a href="#tabset-7-2"><span class="medium-par">Worklflow</span></a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1">
 <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
@@ -645,10 +645,10 @@
 <section id="reflexiones-finales" class="slide level2">
 <h2>Reflexiones finales</h2>
 <p><br> <br></p>
-<p><span class="medium-par fragment">- No ha sido fácil llegar a donde estamos (tensión entre lo <strong>urgente</strong> y lo <strong>estrétegico</strong>)</span></p>
+<p><span class="medium-par fragment">- No ha sido fácil llegar a donde estamos (tensión entre lo <strong>urgente</strong> y lo <strong>estratégico</strong>)</span></p>
 <p><span class="medium-par fragment">- La ciencia de datos para <strong>mejorar</strong> y <strong>ampliar la oferta estadística</strong></span></p>
 <p><span class="medium-par fragment">- Se abre la oportunidad de <strong>aprovechar fuentes no tradicionales</strong> de información (imágenes satelitales, datos de telefonía celular, etc.)</span></p>
-<p><span class="medium-par fragment">- Con el avance tecnológico en <em>hardware</em> y el boom de la inteligencia artificial se ha abierto un importante campo interdisciplinario entre los equipos de negocio y de tecnología</span></p>
+<p><span class="medium-par fragment">- Con el avance tecnológico, de la ciencia de datos y la inteligencia artificial, se ha abierto un <strong>importante campo interdisciplinario entre los equipos de negocio y de tecnología</strong></span></p>
 <p><span class="medium-par fragment">- Se alza un importante desafío en cuanto a <strong>no quedarse fuera del avance de la IA</strong></span></p>
 </section></section>
 <section id="section-7" class="title-slide slide level1 center">
